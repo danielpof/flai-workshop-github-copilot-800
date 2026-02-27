@@ -5,9 +5,57 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #212529;
+  color: #f8f9fa;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* Dark mode Bootstrap overrides */
+.bg-dark {
+  background-color: #1a1d20 !important;
+}
+
+.text-muted {
+  color: #adb5bd !important;
+}
+
+.border-secondary {
+  border-color: #495057 !important;
+}
+
+.list-group-item {
+  background-color: #1a1d20;
+  border-color: #495057;
+  color: #f8f9fa;
+}
+
+.alert {
+  background-color: #1a1d20;
+  border-color: #495057;
+  color: #f8f9fa;
+}
+
+.card {
+  color: #f8f9fa !important;
+}
+
+.card-title {
+  color: #f8f9fa !important;
+}
+
+.card-text {
+  color: #f8f9fa !important;
+}
+
+.table {
+  color: #f8f9fa !important;
+}
+
+.table th,
+.table td {
+  color: #f8f9fa !important;
 }
