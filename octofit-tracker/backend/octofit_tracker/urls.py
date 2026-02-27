@@ -20,6 +20,7 @@ else:
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', api_root, name='api-root'),
+    path('', api_root, name='api-root'),
+    path('api/', api_root, name='api-root-api'),
     path('api/', include(router.urls)),
 ]
