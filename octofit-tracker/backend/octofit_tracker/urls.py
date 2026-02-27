@@ -24,3 +24,10 @@ urlpatterns = [
     path('api/', api_root, name='api-root-api'),
     path('api/', include(router.urls)),
 ]
+
+# REST API endpoints reference (for documentation/tooling)
+# {base_url}/api/users/
+# {base_url}/api/teams/
+# {base_url}/api/activities/
+# {base_url}/api/leaderboard/
+# {base_url}/api/workouts/
