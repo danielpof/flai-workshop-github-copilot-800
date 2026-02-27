@@ -11,7 +11,7 @@ const API_BASE_URL = process.env.REACT_APP_CODESPACE_NAME
   : 'http://localhost:8000/api';
 
 function App() {
-  console.log('OctoFit Tracker App initialized');
+  console.log('Hacking Tracker App initialized');
   console.log('API Base URL:', API_BASE_URL);
   console.log('Environment:', process.env.REACT_APP_CODESPACE_NAME ? 'Codespaces' : 'Local');
 
@@ -29,7 +29,7 @@ function App() {
         <nav className="navbar navbar-expand-lg navbar-dark shadow-sm">
           <div className="container-fluid">
             <Link className="navbar-brand fs-4 fw-bold" to="/">
-              🐙 OctoFit Tracker
+              � Hacking Tracker
             </Link>
             <button 
               className="navbar-toggler" 
@@ -48,19 +48,19 @@ function App() {
                   <Link className="nav-link" to="/">🏠 Home</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/users">🦸 Users</Link>
+                  <Link className="nav-link" to="/users">🕵️ Hackers</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/teams">👥 Teams</Link>
+                  <Link className="nav-link" to="/teams">💀 Crews</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/activities">🏃 Activities</Link>
+                  <Link className="nav-link" to="/activities">⚡ Exploits</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/leaderboard">🏆 Leaderboard</Link>
+                  <Link className="nav-link" to="/leaderboard">🏴‍☠️ Hall of Fame</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/workouts">💪 Workouts</Link>
+                  <Link className="nav-link" to="/workouts">🖥️ Missions</Link>
                 </li>
               </ul>
             </div>
@@ -77,7 +77,7 @@ function App() {
           </Routes>
         </main>
         <footer className="container-fluid text-center text-muted py-3 mt-5">
-          <small>OctoFit Tracker © 2026 | Connected to: {API_BASE_URL}</small>
+          <small>Hacking Tracker © 2026 | Connected to: {API_BASE_URL}</small>
         </footer>
       </div>
     </Router>
@@ -87,33 +87,33 @@ function App() {
 function Home() {
   return (
     <div className="container text-center mt-5">
-      <h1 className="display-3 fw-bold mb-4">Welcome to OctoFit Tracker</h1>
-      <p className="lead fs-4 mb-4">Track your fitness activities and compete with your team!</p>
+      <h1 className="display-3 fw-bold mb-4">Welcome to Hacking Tracker</h1>
+      <p className="lead fs-4 mb-4">Track your exploits and outrank your crew!</p>
       <div className="row mt-5">
         <div className="col-md-4 mb-3">
           <div className="card bg-dark border-primary h-100">
             <div className="card-body">
-              <h5 className="card-title">🦸 Users</h5>
-              <p className="card-text">View all registered users and their profiles</p>
-              <Link to="/users" className="btn btn-primary">View Users</Link>
+              <h5 className="card-title">🕵️ Hackers</h5>
+              <p className="card-text">View all registered hackers and their profiles</p>
+              <Link to="/users" className="btn btn-primary">View Hackers</Link>
             </div>
           </div>
         </div>
         <div className="col-md-4 mb-3">
           <div className="card bg-dark border-success h-100">
             <div className="card-body">
-              <h5 className="card-title">👥 Teams</h5>
-              <p className="card-text">Check out team rosters and memberships</p>
-              <Link to="/teams" className="btn btn-success">View Teams</Link>
+              <h5 className="card-title">� Crews</h5>
+              <p className="card-text">Check out crew rosters and memberships</p>
+              <Link to="/teams" className="btn btn-success">View Crews</Link>
             </div>
           </div>
         </div>
         <div className="col-md-4 mb-3">
           <div className="card bg-dark border-warning h-100">
             <div className="card-body">
-              <h5 className="card-title">🏆 Leaderboard</h5>
-              <p className="card-text">See who's leading the fitness challenge</p>
-              <Link to="/leaderboard" className="btn btn-warning">View Leaderboard</Link>
+              <h5 className="card-title">�‍☠️ Hall of Fame</h5>
+              <p className="card-text">See who's dominating the hacking challenge</p>
+              <Link to="/leaderboard" className="btn btn-warning">View Hall of Fame</Link>
             </div>
           </div>
         </div>

@@ -41,13 +41,13 @@ function Activities() {
 
   return (
     <div className="container mt-4">
-      <h2 className="mb-4 text-light">🏃 Activities</h2>
+      <h2 className="mb-4 text-light">⚡ Exploits</h2>
       <div className="table-responsive">
         <table className="table table-dark table-striped table-hover text-light">
           <thead>
             <tr>
-              <th className="text-light">User</th>
-              <th className="text-light">Activity Type</th>
+              <th className="text-light">Hacker</th>
+              <th className="text-light">Exploit Type</th>
               <th className="text-light">Duration</th>
               <th className="text-light">Date</th>
             </tr>
@@ -64,7 +64,7 @@ function Activities() {
           </tbody>
         </table>
       </div>
-      {activities.length === 0 && <p className="text-muted">No activities found.</p>}
+      {activities.length === 0 && <p className="text-muted">No exploits found.</p>}
     </div>
   );
 }

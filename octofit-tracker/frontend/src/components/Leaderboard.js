@@ -48,7 +48,7 @@ function Leaderboard() {
 
   return (
     <div className="container mt-4">
-      <h2 className="mb-4 text-light">🏆 Leaderboard</h2>
+      <h2 className="mb-4 text-light">�‍☠️ Hall of Fame</h2>
       <div className="row justify-content-center">
         <div className="col-lg-8">
           <div className="card bg-dark border-secondary text-light">
@@ -66,7 +66,7 @@ function Leaderboard() {
           </div>
         </div>
       </div>
-      {leaderboard.length === 0 && <p className="text-muted">No leaderboard entries found.</p>}
+      {leaderboard.length === 0 && <p className="text-muted">No hackers ranked yet.</p>}
     </div>
   );
 }

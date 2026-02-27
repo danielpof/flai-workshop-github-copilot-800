@@ -41,14 +41,14 @@ function Teams() {
 
   return (
     <div className="container mt-4">
-      <h2 className="mb-4 text-light">👥 Teams</h2>
+      <h2 className="mb-4 text-light">� Crews</h2>
       <div className="row">
         {teams.map((team) => (
           <div key={team.id} className="col-md-6 mb-3">
             <div className="card bg-dark border-secondary text-light">
               <div className="card-body">
                 <h5 className="card-title text-light">{team.name}</h5>
-                <p className="card-text text-light"><small className="text-muted">Members:</small></p>
+                <p className="card-text text-light"><small className="text-muted">Crew Members:</small></p>
                 <ul className="list-group list-group-flush">
                   {Array.isArray(team.members) ? (
                     team.members.map((member, idx) => (
@@ -65,7 +65,7 @@ function Teams() {
           </div>
         ))}
       </div>
-      {teams.length === 0 && <p className="text-muted">No teams found.</p>}
+      {teams.length === 0 && <p className="text-muted">No crews found.</p>}
     </div>
   );
 }

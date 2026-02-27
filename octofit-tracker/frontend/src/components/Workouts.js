@@ -41,7 +41,7 @@ function Workouts() {
 
   return (
     <div className="container mt-4">
-      <h2 className="mb-4 text-light">💪 Workouts</h2>
+      <h2 className="mb-4 text-light">�️ Missions</h2>
       <div className="row">
         {workouts.map((workout) => (
           <div key={workout.id} className="col-md-6 col-lg-4 mb-3">
@@ -57,7 +57,7 @@ function Workouts() {
           </div>
         ))}
       </div>
-      {workouts.length === 0 && <p className="text-muted">No workouts found.</p>}
+      {workouts.length === 0 && <p className="text-muted">No missions found.</p>}
     </div>
   );
 }

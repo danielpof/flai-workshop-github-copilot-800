@@ -41,7 +41,7 @@ function Users() {
 
   return (
     <div className="container mt-4">
-      <h2 className="mb-4 text-light">🦸 Users</h2>
+      <h2 className="mb-4 text-light">🕵️ Hackers</h2>
       <div className="row">
         {users.map((user) => (
           <div key={user.id} className="col-md-6 col-lg-4 mb-3">
@@ -57,7 +57,7 @@ function Users() {
           </div>
         ))}
       </div>
-      {users.length === 0 && <p className="text-muted">No users found.</p>}
+      {users.length === 0 && <p className="text-muted">No hackers found.</p>}
     </div>
   );
 }
