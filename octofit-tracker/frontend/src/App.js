@@ -18,7 +18,15 @@ function App() {
   return (
     <Router>
       <div className="App bg-dark text-light min-vh-100">
-        <nav className="navbar navbar-expand-lg navbar-dark bg-black shadow-sm">
+        {/* Vaporwave animated background */}
+        <div className="vw-scene" aria-hidden="true">
+          <div className="vw-sun"></div>
+          <div className="vw-horizon"></div>
+          <div className="vw-grid-wrap"><div className="vw-grid"></div></div>
+          <div className="vw-scanlines"></div>
+        </div>
+
+        <nav className="navbar navbar-expand-lg navbar-dark shadow-sm">
           <div className="container-fluid">
             <Link className="navbar-brand fs-4 fw-bold" to="/">
               🐙 OctoFit Tracker

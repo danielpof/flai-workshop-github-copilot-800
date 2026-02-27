@@ -1,61 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;600;700&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Rajdhani', 'Orbitron', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #212529;
-  color: #f8f9fa;
+  background: #0d001a;
+  color: #ff6ec7;
+  overflow-x: hidden;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'Orbitron', source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  background: rgba(255, 0, 255, 0.15);
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  color: #00ffff;
+  text-shadow: 0 0 8px #00ffff, 0 0 16px rgba(0, 255, 255, 0.5);
+  border: 1px solid rgba(0, 255, 255, 0.3);
 }
 
-/* Dark mode Bootstrap overrides */
+/* ── Bootstrap overrides ───────────────────────────── */
 .bg-dark {
-  background-color: #1a1d20 !important;
+  background: rgba(13, 0, 30, 0.85) !important;
+  backdrop-filter: blur(8px);
 }
 
 .text-muted {
-  color: #adb5bd !important;
+  color: #b06fc4 !important;
+  text-shadow: 0 0 6px rgba(176, 111, 196, 0.5);
 }
 
 .border-secondary {
-  border-color: #495057 !important;
+  border-color: #7b2d8b !important;
 }
 
 .list-group-item {
-  background-color: #1a1d20;
-  border-color: #495057;
-  color: #f8f9fa;
+  background: rgba(30, 0, 60, 0.7);
+  border-color: #7b2d8b;
+  color: #ff6ec7;
+  text-shadow: 0 0 6px rgba(255, 110, 199, 0.4);
 }
 
 .alert {
-  background-color: #1a1d20;
-  border-color: #495057;
-  color: #f8f9fa;
+  background: rgba(30, 0, 60, 0.8);
+  border-color: #ff00ff;
+  color: #ffe066;
+  text-shadow: 0 0 8px rgba(255, 224, 102, 0.6);
 }
 
 .card {
-  color: #f8f9fa !important;
+  color: #ff6ec7 !important;
+  background: rgba(18, 0, 40, 0.82) !important;
+  border: 1px solid rgba(255, 0, 255, 0.45) !important;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 20px rgba(255, 0, 255, 0.2), inset 0 0 40px rgba(123, 45, 139, 0.1);
 }
 
 .card-title {
-  color: #f8f9fa !important;
+  color: #ffe066 !important;
+  font-family: 'Orbitron', monospace !important;
+  text-shadow: 0 0 10px rgba(255, 224, 102, 0.7), 0 0 20px rgba(255, 0, 255, 0.4);
 }
 
 .card-text {
-  color: #f8f9fa !important;
+  color: #e0aaff !important;
+  text-shadow: 0 0 6px rgba(224, 170, 255, 0.4);
 }
 
 .table {
-  color: #f8f9fa !important;
+  color: #ff6ec7 !important;
+  background: rgba(13, 0, 30, 0.6) !important;
 }
 
 .table th,
 .table td {
-  color: #f8f9fa !important;
+  color: #e0aaff !important;
+  border-color: rgba(255, 0, 255, 0.3) !important;
+  text-shadow: 0 0 5px rgba(224, 170, 255, 0.4);
+}
+
+.table th {
+  background: rgba(123, 45, 139, 0.4) !important;
+  color: #ffe066 !important;
+  font-family: 'Orbitron', monospace !important;
+  text-shadow: 0 0 8px rgba(255, 224, 102, 0.6) !important;
+  letter-spacing: 0.05em;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+  background: rgba(60, 0, 100, 0.25) !important;
 }
