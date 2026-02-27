@@ -89,21 +89,6 @@ function Home() {
     <div className="container text-center mt-5">
       <h1 className="display-3 fw-bold mb-4">Welcome to OctoFit Tracker</h1>
       <p className="lead fs-4 mb-4">Track your fitness activities and compete with your team!</p>
-      <div className="card bg-dark border-secondary mt-4">
-        <div className="card-body">
-          <h5 className="card-title">API Connection</h5>
-          <p className="card-text">
-            <small className="text-muted">Backend URL:</small><br />
-            <code className="text-info">{API_BASE_URL}</code>
-          </p>
-          <p className="card-text">
-            <small className="text-muted">Environment:</small><br />
-            <span className="badge bg-success">
-              {process.env.REACT_APP_CODESPACE_NAME ? 'GitHub Codespaces' : 'Local Development'}
-            </span>
-          </p>
-        </div>
-      </div>
       <div className="row mt-5">
         <div className="col-md-4 mb-3">
           <div className="card bg-dark border-primary h-100">
